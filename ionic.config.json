@@ -1,6 +1,8 @@
 {
   "name": "MOD-CO",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "d9175580"
 }
