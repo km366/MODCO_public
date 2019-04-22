@@ -15,19 +15,20 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
+
     {
       title: 'Search',
-      url: '/list',
+      url: '/search',
       icon: 'search'
     },
     {
       title: 'Bookmarks',
-      url: '/home',
-      icon: 'book'
+      url: '/bookmarks',
+      icon: 'bookmark'
     },
     {
       title: 'Settings',
-      url: '/home',
+      url: '/settings',
       icon: 'settings'
     },
   ];

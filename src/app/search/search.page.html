@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button></ion-menu-button><ion-title>Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input placeholder="Enter Company Name"></ion-input>
+  <ion-list>
+  <ion-item>
+    <ion-label>Major</ion-label>
+    <ion-select multiple="true" cancelText="Cancel" okText="Okay">
+      <ion-select-option value="Accounting">Accounting</ion-select-option>
+      <ion-select-option value="BuisnessAdministration">Buisness Administration</ion-select-option>
+      <ion-select-option value="BuisnessAnalytics">Buisness Analytics</ion-select-option>
+      <ion-select-option value="ComputerScience">Computer Science</ion-select-option>
+      <ion-select-option value="ComputerEngineering">Computer Engineering</ion-select-option>
+      <ion-select-option value="DataScience">Data Science</ion-select-option>
+      <ion-select-option value="Economics">Economics</ion-select-option>
+      <ion-select-option value="ElectricalEngineering">Electrical Engineering</ion-select-option>
+      <ion-select-option value="FahionDesign">Fashion Design</ion-select-option>
+      <ion-select-option value="Finance">Finance</ion-select-option>
+      <ion-select-option value="GraphicDesign">Graphic Design</ion-select-option>
+      <ion-select-option value="HumanResources">Human Resources</ion-select-option>
+      <ion-select-option value="InternationalBuisnesss">International Buisness</ion-select-option>
+      <ion-select-option value="MechanicalEngineering">Mechanical Engineering</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Location</ion-label>
+    <ion-select multiple="true">
+      <ion-select-option value="CenterCity">Philadelphia Center City</ion-select-option>
+      <ion-select-option value="UniversityCity">University City</ion-select-option>
+      <ion-select-option value="OtherParts">Other Parts of Philadelphia City</ion-select-option>
+      <ion-select-option value="PhiladelphiaSubberbs">Philadelphia Subberbs</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+<ion-item>
+  <ion-label>Paid</ion-label>
+  <ion-checkbox checked="true"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>Unpaid</ion-label>
+  <ion-checkbox checked="true"></ion-checkbox>
+</ion-item>
+<ion-list-header></ion-list-header>
+<ion-button (click)="goToSearchDisplay()">Search</ion-button>
+</ion-content>
