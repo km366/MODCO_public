@@ -1,0 +1,21 @@
+app-login {
+
+}
+$height100: 100%;
+
+ion-grid {
+  width:100%;
+  height: $height100;
+
+}
+
+
+ion-button {
+  font-weight: 300;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  ion-col {
+    border: none;
+  }
+}
