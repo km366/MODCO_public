@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -18,7 +18,9 @@ const routes: Routes = [
   { path: 'search', loadChildren: './search/search.module#SearchPageModule' },
   { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
   { path: 'bookmarks', loadChildren: './bookmarks/bookmarks.module#BookmarksPageModule' },
-  { path: 'search-display', loadChildren: './search-display/search-display.module#SearchDisplayPageModule' }
+  { path: 'search-display', loadChildren: './search-display/search-display.module#SearchDisplayPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' }
+
 ];
 
 @NgModule({
