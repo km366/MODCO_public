@@ -10,7 +10,8 @@ export class LoginPage implements OnInit {
 
   constructor(
       public navCtrl: NavController
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
   }
@@ -19,6 +20,8 @@ export class LoginPage implements OnInit {
     this.navCtrl.navigateForward('/home');
 
   }
+
   goToRegister() {
-      this.navCtrl.navigateForward('/register');
+    this.navCtrl.navigateForward('/register');
+  }
 }
