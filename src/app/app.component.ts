@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { LoginPage} from './login/login.page';
+
 
 @Component({
   selector: 'app-root',
@@ -14,6 +16,11 @@ export class AppComponent {
       title: 'Login',
       url: '/login',
       icon: 'login'
+    },
+    {
+      title: 'Register',
+      url: '/register',
+      icon: 'register'
     },
     {
       title: 'Home',

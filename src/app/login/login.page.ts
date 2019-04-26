@@ -17,6 +17,8 @@ export class LoginPage implements OnInit {
 
   goToHome() {
     this.navCtrl.navigateForward('/home');
-  }
 
+  }
+  goToRegister() {
+      this.navCtrl.navigateForward('/register');
 }
