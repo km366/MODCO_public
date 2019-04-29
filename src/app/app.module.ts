@@ -1,4 +1,4 @@
-  import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -13,15 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-
-// AF2 Settings-- Bruce
-export const firebaseConfig = {
-  apiKey: "AIzaSyBUDtCeGfmrguwt52wCzRstK0rUUqSC1y8",
-  authDomain: "modco-3b288.firebaseapp.com",
-  databaseURL: "https://modco-3b288.firebaseio.com",
-  storageBucket: "modco-3b288.appspot.com",
-  messagingSenderId: "1079852918306",
-};
+import { firebaseConfig } from './credentials';
 
 @NgModule({
   declarations: [AppComponent],
