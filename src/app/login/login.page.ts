@@ -8,6 +8,11 @@ import {NavController} from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
+  email: string;
+  password: string;
+
+  errorMessage: string;
+
   constructor(
       public navCtrl: NavController
   ) {
@@ -23,5 +28,17 @@ export class LoginPage implements OnInit {
 
   goToRegister() {
     this.navCtrl.navigateForward('/register');
+  }
+
+  log() {
+    console.log(this.email, this.password);
+
+    if (!/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(this.email)) {
+      this.errorMessage = 'Email is not valid';
+    } else {
+      this.errorMessage = '';
+      this.goToHome();
+    }
+
   }
 }

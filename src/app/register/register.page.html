@@ -6,14 +6,15 @@
         <p>Please fill in the relevant details!</p>
       </div>
       <div padding>
+        <p>{{errorMessage}}</p>
         <ion-item>
           <ion-input id= "name" type="text" placeholder="Name"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input id= "email" type="email" placeholder="Email"></ion-input>
+          <ion-input [(ngModel)]="email" pattern="email" name="email" type="email" placeholder="Email"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input id= "password" type="password" placeholder="Password"></ion-input>
+          <ion-input [(ngModel)]="password" pattern="password" name="password" type="password" placeholder="Password"></ion-input>
         </ion-item>
         <ion-item>
           <ion-input id= "confirm_password" type="password" placeholder="Confirm Password"></ion-input>
@@ -21,7 +22,7 @@
       </div>
 
       <div padding>
-        <ion-button (click)="goToLogin()" size="large" expand="block">Register</ion-button>
+        <ion-button (click)="reg()" size="large" expand="block">Register</ion-button>
       </div>
     </ion-col>
   </ion-row>
