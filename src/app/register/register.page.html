@@ -6,7 +6,8 @@
         <p>Please fill in the relevant details!</p>
       </div>
       <div padding>
-        <p>{{errorMessage}}</p>
+        <p>{{errorMessageEmail}}</p>
+        <p>{{errorMessagePassword}}</p>
         <ion-item>
           <ion-input id= "name" type="text" placeholder="Name"></ion-input>
         </ion-item>
@@ -17,7 +18,7 @@
           <ion-input [(ngModel)]="password" pattern="password" name="password" type="password" placeholder="Password"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input id= "confirm_password" type="password" placeholder="Confirm Password"></ion-input>
+          <ion-input [(ngModel)]="conf_password" pattern="password" name="password" type="password" placeholder="Confirm Password"></ion-input>
         </ion-item>
       </div>
 

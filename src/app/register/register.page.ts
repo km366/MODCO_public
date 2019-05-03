@@ -10,8 +10,9 @@ export class RegisterPage implements OnInit {
 
   email: string;
   password: string;
-
-  errorMessage: string;
+  conf_password: string;
+  errorMessageEmail: string;
+  errorMessagePassword: string;
 
   constructor(
       public navCtrl: NavController
@@ -28,11 +29,17 @@ export class RegisterPage implements OnInit {
     console.log(this.email, this.password);
 
     if (!/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(this.email)) {
-      this.errorMessage = 'Email is not valid';
+      this.errorMessageEmail = 'Email is not valid';
     } else {
-      this.errorMessage = '';
+      this.errorMessageEmail = '';
+    }
+    if (this.password === this.conf_password) {
+      this.errorMessagePassword = '';
+  } else{
+    this.errorMessagePassword = 'Passwords don\'t match!';
+  }
+    if (this.errorMessageEmail === this.errorMessagePassword){
       this.goToLogin();
     }
-
   }
 }
