@@ -28,17 +28,23 @@ export class LoginPage implements OnInit {
 
   goToRegister() {
     this.navCtrl.navigateForward('/register');
+    this.email = '';
+    this.password = '';
   }
 
   log() {
     console.log(this.email, this.password);
-
-    if (!/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(this.email)) {
+    if (this.email === undefined && this.password === undefined) {
+      this.errorMessage = 'Please enter your email and password. If you do not have an account please register.';
+    } else if (!/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(this.email)) {
       this.errorMessage = 'Email is not valid';
+    } else if (this.password === undefined) {
+      this.errorMessage = 'Please enter your password';
     } else {
       this.errorMessage = '';
       this.goToHome();
+      this.email = '';
+      this.password = '';
     }
-
   }
 }

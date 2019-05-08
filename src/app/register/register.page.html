@@ -2,14 +2,15 @@
   <ion-row justify-content-center>
     <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
       <div text-center>
-        <h4>Registration Page</h4>
+        <ion-title>Registration Page</ion-title>
         <p>Please fill in the relevant details!</p>
       </div>
       <div padding>
-        <p>{{errorMessageEmail}}</p>
-        <p>{{errorMessagePassword}}</p>
+        <span>
+        <p>{{errorMessage}}</p>
+          </span>
         <ion-item>
-          <ion-input id= "name" type="text" placeholder="Name"></ion-input>
+          <ion-input [(ngModel)]="name" type="text" placeholder="Name"></ion-input>
         </ion-item>
         <ion-item>
           <ion-input [(ngModel)]="email" pattern="email" name="email" type="email" placeholder="Email"></ion-input>
@@ -28,4 +29,3 @@
     </ion-col>
   </ion-row>
 </ion-grid>
-

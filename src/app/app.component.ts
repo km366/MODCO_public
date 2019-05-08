@@ -13,16 +13,6 @@ import { LoginPage} from './login/login.page';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Login',
-      url: '/login',
-      icon: 'login'
-    },
-    {
-      title: 'Register',
-      url: '/register',
-      icon: 'register'
-    },
-    {
       title: 'Home',
       url: '/home',
       icon: 'home'
