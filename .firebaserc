@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "modco-3b288"
+  },
+  "targets": {
+    "modco-3b288": {
+      "hosting": {
+        "public": [
+          "src"
+        ]
+      }
+    }
   }
 }
