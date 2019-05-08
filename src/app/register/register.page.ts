@@ -35,7 +35,7 @@ export class RegisterPage implements OnInit {
     }
     if (this.password === this.conf_password) {
       this.errorMessagePassword = '';
-  } else{
+  } else {
     this.errorMessagePassword = 'Passwords don\'t match!';
   }
     if (this.errorMessageEmail === this.errorMessagePassword){
