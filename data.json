@@ -1,0 +1,13 @@
+{
+  "id": "1",
+  "CompanyName": "Google",
+  "JobTitle": "Software Developer",
+  "Major ": [
+    {"id": "1", "name": "Computer Science"},
+    {"id": "2", "name":  "Software Engineering"},
+  ],
+  "Location": [
+    {"id":  "1", "name": "Center City"},
+    {"id": "2", "name": "University City"},
+  ]
+    },

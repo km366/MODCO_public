@@ -1,3 +1,4 @@
+
 app-login {
 
 }
@@ -9,6 +10,9 @@ ion-grid {
 
 }
 
+ion-item {
+  --full-highlight-height: var(--ion-color-danger)
+}
 
 ion-button {
   font-weight: 300;

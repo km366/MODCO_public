@@ -5,10 +5,9 @@
         <ion-title>Registration Page</ion-title>
         <p>Please fill in the relevant details!</p>
       </div>
-      <div padding>
-        <span>
-        <p>{{errorMessage}}</p>
-          </span>
+      <form padding>
+        <p>{{errorMessageEmail}}</p>
+        <p>{{errorMessagePassword}}</p>
         <ion-item>
           <ion-input [(ngModel)]="name" type="text" placeholder="Name"></ion-input>
         </ion-item>
@@ -21,7 +20,7 @@
         <ion-item>
           <ion-input [(ngModel)]="conf_password" pattern="password" name="password" type="password" placeholder="Confirm Password"></ion-input>
         </ion-item>
-      </div>
+      </form>
 
       <div padding>
         <ion-button (click)="reg(user)" size="large" expand="block">Register</ion-button>

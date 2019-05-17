@@ -7,15 +7,16 @@
         <p>Please enter your Drexel email below to verify your identity.</p>
         <p>If you do not have an account please register.</p>
       </div>
-      <div padding>
-        <p><span>{{errorMessage}}</span></p>
+      <form padding>
+        <p>{{errorMessage}}</p>
         <ion-item>
           <ion-input [(ngModel)]="email" pattern="email" name="email" type="email" placeholder="Email"></ion-input>
         </ion-item>
+
         <ion-item>
-          <ion-input [(ngModel)]="password" pattern="password" name="password" type="password" placeholder="Password"></ion-input>
+            <ion-input [(ngModel)]="password" pattern="password" name="password" type="password" placeholder="Password"></ion-input>
         </ion-item>
-      </div>
+      </form>
       <div padding>
         <ion-button (click)="log()" size="large" expand="block">Login</ion-button>
         <ion-button (click)="goToRegister()" size="large" expand="block" fill = "Medium">Register</ion-button>
