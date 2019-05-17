@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {NavController} from '@ionic/angular';
+import {AngularFireModule} from 'angularfire2';
+
+
 
 @Component({
   selector: 'app-login',
@@ -10,7 +13,6 @@ export class LoginPage implements OnInit {
 
   email: string;
   password: string;
-
   errorMessage: string;
 
   constructor(
@@ -28,8 +30,6 @@ export class LoginPage implements OnInit {
 
   goToRegister() {
     this.navCtrl.navigateForward('/register');
-    this.email = '';
-    this.password = '';
   }
 
   log() {
@@ -43,8 +43,6 @@ export class LoginPage implements OnInit {
     } else {
       this.errorMessage = '';
       this.goToHome();
-      this.email = '';
-      this.password = '';
     }
   }
 }

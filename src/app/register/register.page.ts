@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NavController} from '@ionic/angular';
+import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-register',
@@ -7,13 +9,15 @@ import {NavController} from '@ionic/angular';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
-
-  name: string;
-  email: string;
-  password: string;
-  conf_password: string;
+  email =  'kartikmohan2000@gmail.com';
+  password = '123456';
+  name = 'asdfasd';
+  conf_password = '123456';
   errorMessage: string;
-  constructor(
+
+  userInfo: any;
+
+  constructor(private afAuth: AngularFireAuth,
       public navCtrl: NavController
   ) {
   }
@@ -25,7 +29,7 @@ export class RegisterPage implements OnInit {
     this.navCtrl.navigateForward('/login');
   }
 
-  reg() {
+  async reg() {
     console.log(this.name, this.conf_password, this.email, this.password);
     if (this.name === undefined || this.name === '') {
       this.errorMessage = 'Please enter your name!';
@@ -38,10 +42,25 @@ export class RegisterPage implements OnInit {
     } else if (!Boolean(this.password) || !Boolean(this.conf_password)) {
       this.errorMessage = 'Please create a password!';
     } else {
-      this.goToLogin();
+        await this.afAuth.auth.createUserWithEmailAndPassword(this.email, this.password).then(
+            (res) => {
+              this.userInfo = res.user;
+              console.log('user', res);
+              res.user.sendEmailVerification().then(
+                  () => {
+                    console.log('Email Verification');
+                  },
+                  (err) => {
+                    console.error(err);
+                  }
+              );
+            },
+            (err) => {
+              console.error(err);
+            }
+        );
+
       this.errorMessage = '';
-      this.email = '';
-      this.password = '';
       this.conf_password = '';
       this.name = '';
     }
