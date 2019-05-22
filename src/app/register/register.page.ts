@@ -14,7 +14,6 @@ export class RegisterPage implements OnInit {
   name = 'asdfasd';
   conf_password = '123456';
   errorMessage: string;
-
   userInfo: any;
 
   constructor(private afAuth: AngularFireAuth,
@@ -42,27 +41,15 @@ export class RegisterPage implements OnInit {
     } else if (!Boolean(this.password) || !Boolean(this.conf_password)) {
       this.errorMessage = 'Please create a password!';
     } else {
-        await this.afAuth.auth.createUserWithEmailAndPassword(this.email, this.password).then(
-            (res) => {
-              this.userInfo = res.user;
-              console.log('user', res);
-              res.user.sendEmailVerification().then(
-                  () => {
-                    console.log('Email Verification');
-                  },
-                  (err) => {
-                    console.error(err);
-                  }
-              );
-            },
-            (err) => {
-              console.error(err);
-            }
-        );
-
-      this.errorMessage = '';
-      this.conf_password = '';
-      this.name = '';
+      await this.afAuth.auth.createUserWithEmailAndPassword(this.email, this.password).then(
+              () => {
+                  this.afAuth.authState.subscribe(
+                      (user) => user.sendEmailVerification().then(
+                          () => console.log('email sent')));
+              }
+          );
+      this.goToLogin()
     }
   }
-}
+  }
+

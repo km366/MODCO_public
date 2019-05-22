@@ -1,0 +1,684 @@
+{
+  "id": "0",
+  "CompanyName": "Unicero",
+  "JobTitle": "Database Manager",
+  "Paid": "False",
+  "Major ": [
+    {"id": "1", "name": "Computer Science"},
+    {"id": "1", "name": "Data Science"},
+    {"id": "1", "name": "Software Engineering"},
+    {"id": "1", "name": "Information Systems"},
+  ],
+  "Location": [
+    {"id":  "1", "name": "Center City Philadelphia"}
+  ]
+},
+{
+"id": "1",
+"CompanyName": "Pixocy",
+"JobTitle": "Assistant Nurse",
+"Paid": "False",
+"Major ": [
+{"id": "1", "name": "Nursing"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Biology"},
+],
+"Location": [
+{"id":  "1", "name": "New York"}
+]
+},
+{
+"id": "2",
+"CompanyName": "Amoid",
+"JobTitle": "Research Assistant",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Biology"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Nutrition and Foods"},
+],
+"Location": [
+{"id":  "1", "name": "Baltimore"}
+]
+},
+{
+"id": "3",
+"CompanyName": "Supible",
+"JobTitle": "Research Assistant",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Biology"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Nutrition and Foods"},
+],
+"Location": [
+{"id":  "1", "name": "University City Philadelphia"}
+]
+},
+{
+"id": "4",
+"CompanyName": "Socilith",
+"JobTitle": "Web Developer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Computer Science"},
+{"id": "1", "name": "Software Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Springfield"}
+]
+},
+{
+"id": "5",
+"CompanyName": "Yalia",
+"JobTitle": "Social Media Manager",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "English"},
+{"id": "1", "name": "Communications"},
+{"id": "1", "name": "Computer Science"},
+{"id": "1", "name": "Digital Media"},
+],
+"Location": [
+{"id":  "1", "name": "Springfield"}
+]
+},
+{
+"id": "6",
+"CompanyName": "Medizio",
+"JobTitle": "Social Media Manager",
+"Paid": "False",
+"Major ": [
+{"id": "1", "name": "English"},
+{"id": "1", "name": "Communications"},
+{"id": "1", "name": "Computer Science"},
+{"id": "1", "name": "Digital Media"},
+],
+"Location": [
+{"id":  "1", "name": "Trenton"}
+]
+},
+{
+"id": "7",
+"CompanyName": "Oyombee",
+"JobTitle": "Commercial Building Plan Reviewer",
+"Paid": "False",
+"Major ": [
+{"id": "1", "name": "Civil Engineering"},
+{"id": "1", "name": "Architectural Engineering"},
+{"id": "1", "name": "Mechanical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Center City Philadelphia"}
+]
+},
+{
+"id": "8",
+"CompanyName": "Kinix",
+"JobTitle": "Marketing Intern",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Business"},
+{"id": "1", "name": "Finance"},
+{"id": "1", "name": "Economics"},
+],
+"Location": [
+{"id":  "1", "name": "Baltimore"}
+]
+},
+{
+"id": "9",
+"CompanyName": "Seminu",
+"JobTitle": "Chemical Engineer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Chemical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Pittsburgh"}
+]
+},
+{
+"id": "10",
+"CompanyName": "Zatz",
+"JobTitle": "Marketing Intern",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Business"},
+{"id": "1", "name": "Finance"},
+{"id": "1", "name": "Economics"},
+],
+"Location": [
+{"id":  "1", "name": "Baltimore"}
+]
+},
+{
+"id": "11",
+"CompanyName": "Susill",
+"JobTitle": "Public Relations Specialist",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Communications"},
+{"id": "1", "name": "English"},
+],
+"Location": [
+{"id":  "1", "name": "New York"}
+]
+},
+{
+"id": "12",
+"CompanyName": "Metante",
+"JobTitle": "Chemical Engineer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Chemical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Haddonfield"}
+]
+},
+{
+"id": "13",
+"CompanyName": "Bindo",
+"JobTitle": "Assistant Nurse",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Nursing"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Biology"},
+],
+"Location": [
+{"id":  "1", "name": "Wilmington"}
+]
+},
+{
+"id": "14",
+"CompanyName": "Meendu",
+"JobTitle": "Digital Media Analyst",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Digital Media"},
+{"id": "1", "name": "Business"},
+{"id": "1", "name": "Business Analytics"},
+{"id": "1", "name": "Marketing"},
+],
+"Location": [
+{"id":  "1", "name": "Moorestown"}
+]
+},
+{
+"id": "15",
+"CompanyName": "Centiveo",
+"JobTitle": "Assistant Nurse",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Nursing"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Biology"},
+],
+"Location": [
+{"id":  "1", "name": "New York"}
+]
+},
+{
+"id": "16",
+"CompanyName": "Capible",
+"JobTitle": "Engineering Intern",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Engineering"},
+{"id": "1", "name": "Mechanical Engineering"},
+{"id": "1", "name": "Electrical Engineering"},
+{"id": "1", "name": "Computer Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Trenton"}
+]
+},
+{
+"id": "17",
+"CompanyName": "Duovu",
+"JobTitle": "Business Analyst",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Business"},
+{"id": "1", "name": "Economics"},
+],
+"Location": [
+{"id":  "1", "name": "Trenton"}
+]
+},
+{
+"id": "18",
+"CompanyName": "Contramba",
+"JobTitle": "Business Analyst",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Business"},
+{"id": "1", "name": "Economics"},
+],
+"Location": [
+{"id":  "1", "name": "Trenton"}
+]
+},
+{
+"id": "19",
+"CompanyName": "Leenu",
+"JobTitle": "Social Media Manager",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "English"},
+{"id": "1", "name": "Communications"},
+{"id": "1", "name": "Computer Science"},
+{"id": "1", "name": "Digital Media"},
+],
+"Location": [
+{"id":  "1", "name": "Haddonfield"}
+]
+},
+{
+"id": "20",
+"CompanyName": "Omnindo",
+"JobTitle": "Marketing Intern",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Business"},
+{"id": "1", "name": "Finance"},
+{"id": "1", "name": "Economics"},
+],
+"Location": [
+{"id":  "1", "name": "Trenton"}
+]
+},
+{
+"id": "21",
+"CompanyName": "Aurible",
+"JobTitle": "Mechanical Engineer",
+"Paid": "False",
+"Major ": [
+{"id": "1", "name": "Mechanical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Cherry Hill"}
+]
+},
+{
+"id": "22",
+"CompanyName": "Aita",
+"JobTitle": "Graphic Designer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Graphic Design"},
+{"id": "1", "name": "Digital Media"},
+{"id": "1", "name": "Product Design"},
+{"id": "1", "name": "Design and Merchandising"},
+],
+"Location": [
+{"id":  "1", "name": "Cherry Hill"}
+]
+},
+{
+"id": "23",
+"CompanyName": "Roodeo",
+"JobTitle": "Field Service Engineer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Electrical Engineering"},
+{"id": "1", "name": "Mechanical Engineering"},
+{"id": "1", "name": "Biomedical Engineering"},
+{"id": "1", "name": "Civil Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Springfield"}
+]
+},
+{
+"id": "24",
+"CompanyName": "Monise",
+"JobTitle": "Digital Media Analyst",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Digital Media"},
+{"id": "1", "name": "Business"},
+{"id": "1", "name": "Business Analytics"},
+{"id": "1", "name": "Marketing"},
+],
+"Location": [
+{"id":  "1", "name": "New York"}
+]
+},
+{
+"id": "25",
+"CompanyName": "Circumore",
+"JobTitle": "Chemical Engineer",
+"Paid": "False",
+"Major ": [
+{"id": "1", "name": "Chemical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Moorestown"}
+]
+},
+{
+"id": "26",
+"CompanyName": "Antilith",
+"JobTitle": "Research Assistant",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Biology"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Nutrition and Foods"},
+],
+"Location": [
+{"id":  "1", "name": "Springfield"}
+]
+},
+{
+"id": "27",
+"CompanyName": "Quanix",
+"JobTitle": "Engineering Intern",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Engineering"},
+{"id": "1", "name": "Mechanical Engineering"},
+{"id": "1", "name": "Electrical Engineering"},
+{"id": "1", "name": "Computer Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "New York"}
+]
+},
+{
+"id": "28",
+"CompanyName": "Forent ",
+"JobTitle": "Mechanical Engineer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Mechanical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Center City Philadelphia"}
+]
+},
+{
+"id": "29",
+"CompanyName": "Ambizu",
+"JobTitle": "Chemical Engineer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Chemical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "University City Philadelphia"}
+]
+},
+{
+"id": "30",
+"CompanyName": "Vertible",
+"JobTitle": "Junior Interior Designer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Interior Design"},
+{"id": "1", "name": "Architecture"},
+],
+"Location": [
+{"id":  "1", "name": "Cherry Hill"}
+]
+},
+{
+"id": "31",
+"CompanyName": "Manufic",
+"JobTitle": "Junior Interior Designer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Interior Design"},
+{"id": "1", "name": "Architecture"},
+],
+"Location": [
+{"id":  "1", "name": "Cherry Hill"}
+]
+},
+{
+"id": "32",
+"CompanyName": "Esor",
+"JobTitle": "Database Manager",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Computer Science"},
+{"id": "1", "name": "Data Science"},
+{"id": "1", "name": "Software Engineering"},
+{"id": "1", "name": "Information Systems"},
+],
+"Location": [
+{"id":  "1", "name": "Center City Philadelphia"}
+]
+},
+{
+"id": "33",
+"CompanyName": "Calcend",
+"JobTitle": "Assistant Nurse",
+"Paid": "False",
+"Major ": [
+{"id": "1", "name": "Nursing"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Biology"},
+],
+"Location": [
+{"id":  "1", "name": "Wilmington"}
+]
+},
+{
+"id": "34",
+"CompanyName": "Defic",
+"JobTitle": "Database Manager",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Computer Science"},
+{"id": "1", "name": "Data Science"},
+{"id": "1", "name": "Software Engineering"},
+{"id": "1", "name": "Information Systems"},
+],
+"Location": [
+{"id":  "1", "name": "University City Philadelphia"}
+]
+},
+{
+"id": "35",
+"CompanyName": "Skyize",
+"JobTitle": "Mechanical Engineer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Mechanical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Haddonfield"}
+]
+},
+{
+"id": "36",
+"CompanyName": "Conicious",
+"JobTitle": "Research Assistant",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Biology"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Nutrition and Foods"},
+],
+"Location": [
+{"id":  "1", "name": "Cherry Hill"}
+]
+},
+{
+"id": "37",
+"CompanyName": "Luposis",
+"JobTitle": "Assistant Nurse",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Nursing"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Biology"},
+],
+"Location": [
+{"id":  "1", "name": "Cherry Hill"}
+]
+},
+{
+"id": "38",
+"CompanyName": "Aqumia",
+"JobTitle": "Research Assistant",
+"Paid": "False",
+"Major ": [
+{"id": "1", "name": "Biology"},
+{"id": "1", "name": "Health Sciences"},
+{"id": "1", "name": "Nutrition and Foods"},
+],
+"Location": [
+{"id":  "1", "name": "Haddonfield"}
+]
+},
+{
+"id": "39",
+"CompanyName": "Laudosis",
+"JobTitle": "Mechanical Engineer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Mechanical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Pittsburgh"}
+]
+},
+{
+"id": "40",
+"CompanyName": "Surist",
+"JobTitle": "Public Relations Specialist",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Communications"},
+{"id": "1", "name": "English"},
+],
+"Location": [
+{"id":  "1", "name": "Trenton"}
+]
+},
+{
+"id": "41",
+"CompanyName": "Cogimbee",
+"JobTitle": "Software Developer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Computer Science"},
+{"id": "1", "name": "Software Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "New York"}
+]
+},
+{
+"id": "42",
+"CompanyName": "Dudel",
+"JobTitle": "Field Service Engineer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Electrical Engineering"},
+{"id": "1", "name": "Mechanical Engineering"},
+{"id": "1", "name": "Biomedical Engineering"},
+{"id": "1", "name": "Civil Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Cherry Hill"}
+]
+},
+{
+"id": "43",
+"CompanyName": "Synist",
+"JobTitle": "Games Desinger",
+"Paid": "False",
+"Major ": [
+{"id": "1", "name": "Game Design and Production"},
+{"id": "1", "name": "Computer Science"},
+],
+"Location": [
+{"id":  "1", "name": "Wilmington"}
+]
+},
+{
+"id": "44",
+"CompanyName": "Fortize",
+"JobTitle": "Database Manager",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Computer Science"},
+{"id": "1", "name": "Data Science"},
+{"id": "1", "name": "Software Engineering"},
+{"id": "1", "name": "Information Systems"},
+],
+"Location": [
+{"id":  "1", "name": "Springfield"}
+]
+},
+{
+"id": "45",
+"CompanyName": "Postism",
+"JobTitle": "Business Analyst",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Business"},
+{"id": "1", "name": "Economics"},
+],
+"Location": [
+{"id":  "1", "name": "Haddonfield"}
+]
+},
+{
+"id": "46",
+"CompanyName": "Unity",
+"JobTitle": "Chemical Engineer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Chemical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Moorestown"}
+]
+},
+{
+"id": "47",
+"CompanyName": "Difore",
+"JobTitle": "Commercial Building Plan Reviewer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Civil Engineering"},
+{"id": "1", "name": "Architectural Engineering"},
+{"id": "1", "name": "Mechanical Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Moorestown"}
+]
+},
+{
+"id": "48",
+"CompanyName": "Divalia",
+"JobTitle": "Public Relations Specialist",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Communications"},
+{"id": "1", "name": "English"},
+],
+"Location": [
+{"id":  "1", "name": "Moorestown"}
+]
+},
+{
+"id": "49",
+"CompanyName": "Pyroxo",
+"JobTitle": "Web Developer",
+"Paid": "True",
+"Major ": [
+{"id": "1", "name": "Computer Science"},
+{"id": "1", "name": "Software Engineering"},
+],
+"Location": [
+{"id":  "1", "name": "Wilmington"}
+]
+}

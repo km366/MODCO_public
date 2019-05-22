@@ -20,4 +20,3 @@ export class SearchPage implements OnInit {
   }
 
 }
- 
