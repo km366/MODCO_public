@@ -8,12 +8,11 @@ import * as firebase from 'firebase/app';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
-  email =  'kartikmohan2000@gmail.com';
-  password = '123456';
-  name = 'asdfasd';
-  conf_password = '123456';
+  email =  '';
+  password = '';
+  name = '';
+  conf_password = '';
   errorMessage: string;
-  userInfo: any;
 
   constructor(
       public navCtrl: NavController

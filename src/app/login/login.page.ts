@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NavController} from '@ionic/angular';
+import * as firebase from 'firebase/app';
 
 
 @Component({
@@ -40,7 +41,19 @@ export class LoginPage implements OnInit {
       this.errorMessage = 'Please enter your password';
     } else {
       this.errorMessage = '';
-      this.goToHome();
+      firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
+          () => {
+            const user = firebase.auth().currentUser;
+            if (user.emailVerified) {
+              this.goToHome();
+            } else {
+              this.errorMessage = 'Please verify your email first!';
+            }
+          },
+      (err) => {
+            this.errorMessage = 'Invalid Username or password!';
+            console.log(err);
+      });
     }
   }
 }
