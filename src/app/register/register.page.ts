@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {NavController} from '@ionic/angular';
-import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 
 @Component({
@@ -16,7 +15,7 @@ export class RegisterPage implements OnInit {
   errorMessage: string;
   userInfo: any;
 
-  constructor(private afAuth: AngularFireAuth,
+  constructor(
       public navCtrl: NavController
   ) {
   }
@@ -41,14 +40,21 @@ export class RegisterPage implements OnInit {
     } else if (!Boolean(this.password) || !Boolean(this.conf_password)) {
       this.errorMessage = 'Please create a password!';
     } else {
-      await this.afAuth.auth.createUserWithEmailAndPassword(this.email, this.password).then(
+      await firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
               () => {
-                  this.afAuth.authState.subscribe(
-                      (user) => user.sendEmailVerification().then(
-                          () => console.log('email sent')));
+                const user = firebase.auth().currentUser;
+
+                user.sendEmailVerification().then(
+                    () => {
+                      console.log('Email sent');
+                    },
+                    (err) => {
+                      console.error(err);
+                    }
+                );
               }
           );
-      this.goToLogin()
+      this.goToLogin();
     }
   }
   }
