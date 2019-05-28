@@ -27,13 +27,15 @@ export class RegisterPage implements OnInit {
   }
 
   async reg() {
-    console.log(this.name, this.conf_password, this.email, this.password);
+    const l = this.email.split('@');
     if (this.name === undefined || this.name === '') {
       this.errorMessage = 'Please enter your name!';
     } else if (!this.email) {
       this.errorMessage = 'Please enter your email!';
     } else if (!/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(this.email)) {
       this.errorMessage = 'Email is not valid';
+    } else if (l[1] !== 'drexel.edu') {
+      this.errorMessage = 'This is not a Drexel email';
     } else if (this.password !== this.conf_password) {
       this.errorMessage = 'Passwords don\'t match!';
     } else if (!Boolean(this.password) || !Boolean(this.conf_password)) {

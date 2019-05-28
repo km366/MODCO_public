@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-display.page.scss'],
 })
 export class SearchDisplayPage implements OnInit {
-
   constructor() { }
-
   ngOnInit() {
   }
 

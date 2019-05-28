@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-searchbar placeholder="Enter Company Name"></ion-searchbar>
+  <ion-searchbar [(ngModel)]="CompanyName" placeholder="Enter Company Name"></ion-searchbar>
   <ion-list>
   <ion-item>
     <ion-label>Major</ion-label>
@@ -116,10 +116,17 @@
   <ion-item>
     <ion-label>Location</ion-label>
     <ion-select multiple="true">
-      <ion-select-option value="CenterCity">Philadelphia Center City</ion-select-option>
-      <ion-select-option value="UniversityCity">University City</ion-select-option>
-      <ion-select-option value="OtherParts">Near Philadelphia</ion-select-option>
-      <ion-select-option value="OtherCities">Other Cities</ion-select-option>
+      <ion-select-option value="OtherCities">Center City Philadelphia</ion-select-option>
+      <ion-select-option value="OtherCities">University City Philadelphia</ion-select-option>
+      <ion-select-option value="OtherCities">Cherry Hill</ion-select-option>
+      <ion-select-option value="OtherCities">Baltimore</ion-select-option>
+      <ion-select-option value="OtherCities">Haddonfield</ion-select-option>
+      <ion-select-option value="OtherCities">New York</ion-select-option>
+      <ion-select-option value="OtherCities">Pittsburgh</ion-select-option>
+      <ion-select-option value="OtherCities">Springfield</ion-select-option>
+      <ion-select-option value="OtherCities">Moorestown</ion-select-option>
+      <ion-select-option value="OtherCities">Trenton</ion-select-option>
+      <ion-select-option value="OtherCities">Wilmington</ion-select-option>
     </ion-select>
   </ion-item>
 </ion-list>
@@ -132,5 +139,5 @@
   <ion-checkbox checked="true"></ion-checkbox>
 </ion-item>
 <ion-list-header></ion-list-header>
-<ion-button (click)="goToSearchDisplay(name)">Search</ion-button>
+<ion-button (click)="goToSearchDisplay(CompanyName)">Search</ion-button>
 </ion-content>
