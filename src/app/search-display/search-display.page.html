@@ -6,12 +6,12 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card class="jobs">
+  <ion-card class="jobs" *ngFor="let job of jobs">
     <ion-card-header>
-      <ion-card-subtitle>{{JobTitle}}</ion-card-subtitle>
-      <ion-card-subtitle>{{Location}}</ion-card-subtitle>
-      <ion-card-subtitle>{{Paid}}</ion-card-subtitle>
-      <ion-card-title>{{CompanyName}}</ion-card-title>
+      <ion-card-title>{{job.name}}</ion-card-title>
+      <ion-card-subtitle>{{job.title}}</ion-card-subtitle>
+      <ion-card-subtitle>{{job.l}}</ion-card-subtitle>
+      <ion-card-subtitle>{{job.location}}</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 </ion-content>

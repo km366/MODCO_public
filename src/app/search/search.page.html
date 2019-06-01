@@ -5,11 +5,11 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-searchbar [(ngModel)]="CompanyName" placeholder="Enter Company Name"></ion-searchbar>
+  <ion-searchbar [(ngModel)]="companyName" placeholder="Enter Company Name"></ion-searchbar>
   <ion-list>
   <ion-item>
     <ion-label>Major</ion-label>
-    <ion-select multiple="true" cancelText="Cancel" okText="Okay">
+    <ion-select [(ngModel)]="majors" multiple="true" cancelText="Cancel" okText="Okay">
       <ion-select-option value="Accounting">Accounting</ion-select-option>
       <ion-select-option value="AirForceROTC">Air Force ROTC</ion-select-option>
       <ion-select-option value="Animation&VisualEffects">Animation & Visual Effects</ion-select-option>
@@ -132,12 +132,12 @@
 </ion-list>
 <ion-item>
   <ion-label>Paid</ion-label>
-  <ion-checkbox checked="true"></ion-checkbox>
+  <ion-checkbox [(ngModel)]= "paid_val" checked="true"></ion-checkbox>
 </ion-item>
 <ion-item>
   <ion-label>Unpaid</ion-label>
-  <ion-checkbox checked="true"></ion-checkbox>
+  <ion-checkbox [(ngModel)]= "unpaid_val" checked="true"></ion-checkbox>
 </ion-item>
 <ion-list-header></ion-list-header>
-<ion-button (click)="goToSearchDisplay(CompanyName)">Search</ion-button>
+<ion-button (click)="goToSearchDisplay(companyName)">Search</ion-button>
 </ion-content>
