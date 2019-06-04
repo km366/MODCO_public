@@ -17,7 +17,6 @@ export class SearchDisplayPage implements OnInit {
 
   ngOnInit() {
     this.jobs = this.jobsDataService.getJobData();
-    console.log('Search display', this.jobs);
   }
 
 }

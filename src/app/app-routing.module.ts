@@ -16,10 +16,9 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },
   { path: 'search', loadChildren: './search/search.module#SearchPageModule' },
-  { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
-  { path: 'bookmarks', loadChildren: './bookmarks/bookmarks.module#BookmarksPageModule' },
   { path: 'search-display', loadChildren: './search-display/search-display.module#SearchDisplayPageModule' },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' }
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' }
 
 
 ];

@@ -115,29 +115,21 @@
 
   <ion-item>
     <ion-label>Location</ion-label>
-    <ion-select multiple="true">
-      <ion-select-option value="OtherCities">Center City Philadelphia</ion-select-option>
-      <ion-select-option value="OtherCities">University City Philadelphia</ion-select-option>
-      <ion-select-option value="OtherCities">Cherry Hill</ion-select-option>
-      <ion-select-option value="OtherCities">Baltimore</ion-select-option>
-      <ion-select-option value="OtherCities">Haddonfield</ion-select-option>
-      <ion-select-option value="OtherCities">New York</ion-select-option>
-      <ion-select-option value="OtherCities">Pittsburgh</ion-select-option>
-      <ion-select-option value="OtherCities">Springfield</ion-select-option>
-      <ion-select-option value="OtherCities">Moorestown</ion-select-option>
-      <ion-select-option value="OtherCities">Trenton</ion-select-option>
-      <ion-select-option value="OtherCities">Wilmington</ion-select-option>
+    <ion-select [(ngModel)]="location" multiple="true" cancelText="Cancel" okText="Okay">
+      <ion-select-option value="Center City Philadelphia">Center City Philadelphia</ion-select-option>
+      <ion-select-option value="University City Philadelphia">University City Philadelphia</ion-select-option>
+      <ion-select-option value="Cherry Hill">Cherry Hill</ion-select-option>
+      <ion-select-option value="Baltimore">Baltimore</ion-select-option>
+      <ion-select-option value="Haddonfield">Haddonfield</ion-select-option>
+      <ion-select-option value="New York">New York</ion-select-option>
+      <ion-select-option value="Pittsburgh">Pittsburgh</ion-select-option>
+      <ion-select-option value="Springfield">Springfield</ion-select-option>
+      <ion-select-option value="Moorestown">Moorestown</ion-select-option>
+      <ion-select-option value="Trenton">Trenton</ion-select-option>
+      <ion-select-option value="Wilmington">Wilmington</ion-select-option>
     </ion-select>
   </ion-item>
 </ion-list>
-<ion-item>
-  <ion-label>Paid</ion-label>
-  <ion-checkbox [(ngModel)]= "paid_val" checked="true"></ion-checkbox>
-</ion-item>
-<ion-item>
-  <ion-label>Unpaid</ion-label>
-  <ion-checkbox [(ngModel)]= "unpaid_val" checked="true"></ion-checkbox>
-</ion-item>
 <ion-list-header></ion-list-header>
-<ion-button (click)="goToSearchDisplay(companyName)">Search</ion-button>
+<ion-button (click)="goToSearchDisplay()">Search</ion-button>
 </ion-content>

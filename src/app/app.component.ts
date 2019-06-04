@@ -18,17 +18,7 @@ export class AppComponent {
       title: 'Search',
       url: '/search',
       icon: 'search'
-    },
-    {
-      title: 'Bookmarks',
-      url: '/bookmarks',
-      icon: 'bookmark'
-    },
-    {
-      title: 'Settings',
-      url: '/settings',
-      icon: 'settings'
-    },
+    }
   ];
 
   constructor(
