@@ -1,0 +1,8 @@
+{
+  "id": "i.d.",
+  "CompanyName": "company",
+  "JobTitle": "title",
+  "Paid": "bool",
+  "Major ": [i.d.],
+  "Location": "location"
+    },
